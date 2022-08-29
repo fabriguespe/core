@@ -23,7 +23,8 @@
     "compile": "SKIP_LOAD=true hardhat clean && SKIP_LOAD=true hardhat compile",
     "console:fork": "MAINNET_FORK=true hardhat console",
     "format": "prettier --write .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start-docker":"export USERID=$UID && docker-compose build && docker-compose run --name lens contracts-env bash"
   },
   "repository": {
     "type": "git",
